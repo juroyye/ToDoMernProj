@@ -4,6 +4,13 @@ The ultimate goal of this application is to create a modern and simplistic appli
 
 
 
+
+
+DEPLOYED LINK: 
+
+
+
+
 Technologies Used: 
 
 MERN Stack (MongoDB, Express, React, Node.js), VS Code, Github

@@ -1,22 +1,22 @@
 import './App.css';
+import React from 'react';
+// import LoginForm from './pages/Login';
+import ToDoForm from './pages/Todos';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>   
+      <header id='title'>My Tasks</header>
+        <div id='tdform'> 
+          <ToDoForm/>
+          </div>    
+      
+      {/* <div className='form'>
+         <LoginForm />
+         </div> */}
+
+             </>            
   );
 }
 

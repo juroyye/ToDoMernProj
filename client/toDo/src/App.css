@@ -1,0 +1,52 @@
+*{
+    background-color: black;
+}
+
+#header{
+    color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form{
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn{
+    color: white;
+    position: relative;
+    left: 320px;
+    top: -40px;
+    padding: 0.3rem;
+    width: 70px;
+}
+
+#tdform{
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+#title{
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+}
+
+#task{
+    color: antiquewhite;
+    padding: 1rem;
+    position: relative;
+    resize: both;
+    overflow: hidden;
+    font-weight: 700;
+    width: 100%;
+    max-width: 40ch;
+}
