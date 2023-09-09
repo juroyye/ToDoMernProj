@@ -8,7 +8,7 @@ const app = express()
 app.use(cors())
 app.use(express.json)
 
-mongoose.connect('mongodb://127.0.0.1:27017/test')
+mongoose.connect('mongodb+srv://juroyye:element222@cluster0.sc93osl.mongodb.net/')
 
 app.post('/add', (req, res) => {
     const task = req.body.task;
@@ -18,6 +18,6 @@ app.post('/add', (req, res) => {
     .catch(err => res.json(err))
 })
 
-app.listen(3000, () => {
-    console.log("Listening on port 3000!")
+app.listen(3001, () => {
+    console.log("Listening on port 3001!")
 })
