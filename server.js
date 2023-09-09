@@ -10,6 +10,13 @@ app.use(express.json())
 
 mongoose.connect('mongodb+srv://juroyye:element222@cluster0.sc93osl.mongodb.net/')
 
+app.get('/get', (req, res) => {
+    TodoModel.find()
+    .then(result => res.json(result))
+    .catch(err => res.json(err))
+})
+
+
 app.post('/add', (req, res) => {
     const task = req.body.task;
     TodoModel.create({

@@ -50,3 +50,13 @@
     width: 100%;
     max-width: 40ch;
 }
+
+.outputs{
+    padding: 1rem;
+    position: relative;
+    resize: both;
+    overflow: hidden;
+    font-weight: 700;
+    width: 100%;
+    max-width: 40ch;
+}
