@@ -6,7 +6,7 @@ const TodoModel = require('./backend/Models/Todo')
 const app = express()
 
 app.use(cors())
-app.use(express.json)
+app.use(express.json())
 
 mongoose.connect('mongodb+srv://juroyye:element222@cluster0.sc93osl.mongodb.net/')
 
