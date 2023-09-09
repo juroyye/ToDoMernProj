@@ -23,6 +23,8 @@ function ToDoForm() {
             todos.map(todo => (
                 <div className="outputs">
                     {todo.task}
+         <button type='button' id='rembtn'>Remove Task</button>
+        <button type='button' id='edbtn'>Edit Task</button>
                 </div>
             ))
         }

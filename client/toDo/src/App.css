@@ -52,11 +52,28 @@
 }
 
 .outputs{
+    border: 1px white solid;
+    border-radius: 10%;
     padding: 1rem;
     position: relative;
-    resize: both;
     overflow: hidden;
     font-weight: 700;
     width: 100%;
-    max-width: 40ch;
+    max-width: 60ch;
+}
+
+#rembtn{
+    position: relative;
+    left: 40px;
+   padding: 10px;
+   border-bottom: 2px solid;
+   color: white;
+}
+
+#edbtn{
+    position: relative;
+    left: 40px;
+   padding: 10px;
+   border-bottom: 2px solid;
+   color: white;
 }
