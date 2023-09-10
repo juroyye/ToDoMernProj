@@ -6,11 +6,17 @@ import axios from "axios";
 function ToDoForm() {
  
     const[todos, setTodos] = useState([])
+
+
     useEffect(() => {
       axios.get('http://localhost:3001/get')
       .then(result => setTodos(result.data))
       .catch(err => console.log(err))
     }, []) 
+
+    const handleEdit = () => {
+      
+    }
 
   return (
     <div>
@@ -24,7 +30,7 @@ function ToDoForm() {
                 <div className="outputs">
                     {todo.task}
          <button type='button' id='rembtn'>Remove Task</button>
-        <button type='button' id='edbtn'>Edit Task</button>
+        <button type='button' onClick={handleEdit} id='edbtn'>Edit Task</button>
                 </div>
             ))
         }
