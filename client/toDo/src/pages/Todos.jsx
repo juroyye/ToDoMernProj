@@ -12,11 +12,23 @@ function ToDoForm() {
       axios.get('http://localhost:3001/get')
       .then(result => setTodos(result.data))
       .catch(err => console.log(err))
-    }, []) 
-
-    const handleEdit = () => {
-      
+    }, [])  
+    
+    
+    const handleEdit = (id) => {
+      axios.put('http://localhost:3001/update/'+id)
+      .then(result => {window.location.reload()})
+      .catch(err => console.log(err))
     }
+
+    const handleDelete = (id) => {
+      axios.delete('http://localhost:3001/delete/'+id)
+      .then(result => {window.location.reload()})
+      .catch(err => console.log(err))
+    }
+
+
+
 
   return (
     <div>
@@ -29,7 +41,7 @@ function ToDoForm() {
             todos.map(todo => (
                 <div className="outputs" onClick={() => handleEdit(todo._id)}>
                     {todo.task}
-         <button type='button' id='delbtn'>Remove Task</button>
+         <button type='button' onClick={() => handleDelete(todo._id)} id='delbtn'>Remove Task</button>
         <button type='button'  id='edbtn'>Edit Task</button>
                 </div>
             ))
