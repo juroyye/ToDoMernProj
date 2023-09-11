@@ -27,10 +27,10 @@ function ToDoForm() {
             <div><h2></h2></div>
             :
             todos.map(todo => (
-                <div className="outputs">
+                <div className="outputs" onClick={() => handleEdit(todo._id)}>
                     {todo.task}
-         <button type='button' id='rembtn'>Remove Task</button>
-        <button type='button' onClick={handleEdit} id='edbtn'>Edit Task</button>
+         <button type='button' id='delbtn'>Remove Task</button>
+        <button type='button'  id='edbtn'>Edit Task</button>
                 </div>
             ))
         }
