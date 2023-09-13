@@ -64,7 +64,7 @@
 
 #delbtn{
     position: relative;
-    left: 40px;
+    left: 70px;
    padding: 10px;
    border-bottom: 2px solid;
    color: white;
@@ -76,4 +76,8 @@
    padding: 10px;
    border-bottom: 2px solid;
    color: white;
+}
+
+#subby{
+    color: white;
 }

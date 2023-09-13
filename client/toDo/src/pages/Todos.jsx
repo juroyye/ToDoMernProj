@@ -17,7 +17,7 @@ function ToDoForm() {
     
     const handleEdit = (id) => {
       axios.put('http://localhost:3001/update/'+id)
-      .then(result => {window.location.reload()})
+      .then(result => console.log(result))
       .catch(err => console.log(err))
     }
 
@@ -36,13 +36,13 @@ function ToDoForm() {
         {
             todos.length === 0 
             ?
-            <div><h2></h2></div>
+            <div><h2>No Tasks Found</h2></div>
             :
             todos.map(todo => (
                 <div className="outputs" onClick={() => handleEdit(todo._id)}>
+                <input type="checkbox" id="check" onClick={handleEdit}></input>
                     {todo.task}
          <button type='button' onClick={() => handleDelete(todo._id)} id='delbtn'>Remove Task</button>
-        <button type='button'  id='edbtn'>Edit Task</button>
                 </div>
             ))
         }

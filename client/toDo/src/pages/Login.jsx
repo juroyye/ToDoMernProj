@@ -56,7 +56,7 @@ function LoginForm() {
           />
         </div>
         <div id="btn">
-          <button type="submit">Submit</button>
+          <button color="white" id="subby" type="submit">Submit</button>
         </div>
       </form>
 
