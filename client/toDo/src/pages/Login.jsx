@@ -27,14 +27,14 @@ function LoginForm() {
   };
 
   return (
-    <div>
+    <div id="logindiv">
       <h1 id="header">Let's Do More</h1>
 
       <p>Login</p>
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email: </label>
           <input
             type="email"
             id="email"
@@ -45,7 +45,7 @@ function LoginForm() {
           />
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password">Password: </label>
           <input
             type="password"
             id="password"

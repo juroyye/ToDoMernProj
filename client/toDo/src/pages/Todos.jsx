@@ -39,9 +39,9 @@ function ToDoForm() {
             <div><h2>No Tasks Found</h2></div>
             :
             todos.map(todo => (
-                <div className="outputs" onClick={() => handleEdit(todo._id)}>
-                <input type="checkbox" id="check" onClick={handleEdit}></input>
-                    {todo.task}
+                <div className="outputs">
+                <input type="checkbox" id="check" onClick={() => handleEdit(todo._id)}></input>
+              <h3>{todo.task}</h3>   
          <button type='button' onClick={() => handleDelete(todo._id)} id='delbtn'>Remove Task</button>
                 </div>
             ))
