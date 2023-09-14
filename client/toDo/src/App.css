@@ -58,7 +58,7 @@
     border: 1px white solid;
     width: 700px;
     border-radius: 10%;
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
     overflow: hidden;
     font-weight: 700;
@@ -66,10 +66,10 @@
 
 #rembtn{
     position: relative;
-    left: 70px;
+    left: 300px;
    padding: 10px;
    border-bottom: 2px solid;
-   color: white;
+   color: green;
    background-color: transparent;
 }
 
@@ -145,4 +145,16 @@
     position: relative;
     left: 390px;
     color: gray;
+}
+
+.taskDis{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: green;
+}
+
+.completeTask{
+    position: relative;
+    color: green;
+    bottom: 35px;
+    left: 30px;
 }

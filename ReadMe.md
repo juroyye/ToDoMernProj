@@ -1,6 +1,6 @@
 Introduction:
 
-The ultimate goal of this application is to create a modern and simplistic application that allows the user to easily store tasks due for completion. Upon interaction with the interface, users are able to create, read, update, and delete tasks. 
+The ultimate goal of this application is to create a modern and simplistic application that allows the user to easily store tasks due for completion. Upon interaction with the interface, users are able to create, read, update, and delete tasks. There is a simple login page that navigates to the ToDo List upon successful login.
 
 
 
@@ -17,9 +17,9 @@ MERN Stack (MongoDB, Express, React, Node.js), VS Code, Github
 
 Getting Started: https://trello.com/b/bYSrfqna/todoapp
 
-Unsolved Problems: N/A
+Unsolved Problems: One problem, I can't get my complete task to render back to false in the database once I unclick the checkbox.
 
-Future Enhancements: Stylistic chamges, import images that offer personality to each task
+Future Enhancements: Stylistic changes, import images that offer personality to each task
 
 
 
@@ -43,152 +43,3 @@ create buttons that spawn with those divs and allow for an update and a delete
 
 
 
-import React, {useState} from "react";
-
-
-function LoginForm() {
-    // State to store the values of email and password inputs
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-  
-    // Function to handle form submission
-    const handleSubmit = (e) => {
-      e.preventDefault(); // Prevent the default form submission behavior
-      // You can add your logic here, such as sending the data to a server
-      console.log('Email:', email);
-      console.log('Password:', password);
-    };
-  
-    return(
-        <div>
-            <h1 id="header">
-                Let's Do More
-            </h1>
-
-            <p>Login</p>
-            
-            <form onSubmit={handleSubmit}>
-        <div>
-          <label email="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label password="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <div id="btn">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-        </div>
-    )
-}
-
-export default LoginForm;
-
-
-
-
-
-
-
-import './App.css';
-import React from 'react';
-import LoginForm from './pages/Login';
-import ToDoForm from './pages/Todos';
-
-function App() {
-
-  return (
-<>   
-      <header id='title'>My Tasks</header>
-        <div id='tdform'> 
-          <ToDoForm/>
-          </div>    
-      
-      <div className='form'>
-         <LoginForm />
-         </div>
-
-             </>            
-  );
-}
-
-export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import './App.css';
-import React, { useState } from 'react';
-import LoginForm from './pages/Login';
-import ToDoForm from './pages/Todos';
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-
-
-
-function App() {
-  // State to track whether the user is logged in
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-
-  // Function to handle logout
-
-const handleLogout = () => {
-  setIsLoggedIn(false)
-}
-
-  return (
-    <div>
-      {isLoggedIn ? (
-        // Render the ToDoForm when isLoggedIn is true
-        <div id='tdform'>
-          <ToDoForm />
-          <button onClick={handleLogout}>Work</button>
-        </div>
-      ) : (
-        // Render the LoginForm when isLoggedIn is false
-        <div id='form'>
-          <LoginForm />
-        </div>
-      )}
-    </div>
-  );
-}
-
-export default App;
