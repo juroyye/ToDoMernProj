@@ -29,7 +29,7 @@ Getting Started: https://trello.com/b/bYSrfqna/todoapp
 
 Unsolved Problems: One problem, I can't get my complete task to render back to false in the database once I unclick the checkbox.
 
-Future Enhancements: Stylistic changes, import images that offer personality to each task
+Future Enhancements: Stylistic changes, import images that offer personality to each task, need to add timestamps
 
 Key Features: 
 
