@@ -21,7 +21,9 @@ MERN Stack (
   VS Code, 
   Github,
   Mongoose,
-  React-router-dom
+  React-router-dom,
+  useNavigate,
+  basic CSS
 
 Getting Started: https://trello.com/b/bYSrfqna/todoapp
 
@@ -40,6 +42,12 @@ Allows you to read all the set tasks.
 Allows you to update the task by manipulating it as complete.
 
 Allows you to remove a task and in turn, remove it out the database.
+
+
+Favorite features: Todo.js has Mongoose model.
+                  Favorite Express controller method: Delete method
+                  Favorite React component: Background video, I love the colors
+                  Client-side routing: I used useNavigate, and navigated between the todo and login form.
 
 
 
