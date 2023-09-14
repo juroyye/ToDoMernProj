@@ -29,13 +29,14 @@ function LoginForm() {
   };
 
   return (
+    <> 
     <div id="logindiv">
-      <h1 id="header">Let's Do More</h1>
+      <h1 id="header">Let's <span id="wordDo">Do</span> More</h1>
 
-      <h3>Login!</h3>
+      {/* <h3 id="loginWrd">Login!</h3> */}
 
       <form onSubmit={handleSubmit}>
-        <div>
+        <div id="emailThing">
           <label htmlFor="email">Email: </label>
           <input
             type="email"
@@ -46,7 +47,7 @@ function LoginForm() {
             required
           />
         </div>
-        <div>
+        <div id="passThing">
           <label htmlFor="password">Password: </label>
           <input
             type="password"
@@ -64,6 +65,8 @@ function LoginForm() {
 
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
+    </>
+  
   );
 }
 

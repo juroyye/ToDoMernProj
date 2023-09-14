@@ -3,22 +3,16 @@ import './App.css';
 import LoginForm from './pages/Login';
 import ToDoForm from './pages/Todos';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-
+import BackgroundVideo from './BackgroundVid';
 
 
 function App() {
-  // State to track whether the user is logged in
-//   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-
-//   // Function to handle logout
-
-// const handleLogout = () => {
-//   setIsLoggedIn(false)
-// }
 
   return (
-        <div id='form'>
+    <>   
+    <BackgroundVideo/>
+     <div id='form'>
          <BrowserRouter>
          <Routes>
           <Route index element={<LoginForm/>} />
@@ -27,6 +21,8 @@ function App() {
           </Routes>
           </BrowserRouter>
          </div>
+         </>
+  
 
   );
 }

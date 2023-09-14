@@ -1,10 +1,8 @@
-*{
-    background-color: black;
-}
 
 #header{
     color: antiquewhite;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 85px;
 }
 
 #form{
@@ -12,15 +10,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .btn{
+    position: absolute;
+    left: 105px;
+    top: -8px;
+  background-color: transparent;
     color: white;
     position: relative;
-    left: 320px;
-    top: -40px;
-    padding: 0.3rem;
+    bottom: 49px;
+    padding: 0.4rem;
     width: 70px;
 }
 
@@ -41,33 +42,35 @@
 }
 
 #taske{
+    left: 100px;
     color: antiquewhite;
-    padding: 1rem;
+    background-color: transparent;
+    padding: 2rem;
     position: relative;
     resize: both;
     overflow: hidden;
     font-weight: 700;
-    width: 100%;
-    max-width: 40ch;
+    width: 90vh;
 }
 
-.outputs{
+.outputs{ 
+    width: 80vh;
     border: 1px white solid;
+    width: 700px;
     border-radius: 10%;
     padding: 1rem;
     position: relative;
     overflow: hidden;
     font-weight: 700;
-    width: 100%;
-    max-width: 60ch;
 }
 
-#delbtn{
+#rembtn{
     position: relative;
     left: 70px;
    padding: 10px;
    border-bottom: 2px solid;
    color: white;
+   background-color: transparent;
 }
 
 #edbtn{
@@ -79,8 +82,67 @@
 }
 
 #subby{
-    color: white;
+    position: relative;
+    color: gray;
+    background-color: transparent;
+    top: 50px;
+    left: 250px;
 }
 
+#password{
+    color: gray;
+    background-color: transparent;
+}
 
+#email{
+    color: gray;
+    background-color: transparent;
+}
 
+#wordDo{
+    color: green;
+}
+
+.bgVid{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+#emailThing{
+    color: green;
+        position: relative;
+        left: 110px;
+        font-size: 30px;
+      }
+
+#passThing{
+    color: green;
+    position: relative;
+    left: 120px;
+    font-size: 30px;
+}
+
+#loginWrd{
+    position: relative;
+    top: 22px;
+    left: 260px;
+    font-size: 15px;
+}
+
+#logoutbtn{
+    position: relative;
+    background-color: transparent;
+    left: 200px;
+    bottom: 250px;
+}
+
+#taskTitle{
+    position: relative;
+    left: 390px;
+    color: gray;
+}
