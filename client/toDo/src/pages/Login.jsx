@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
 
 function LoginForm() {
   // State to store the values of email and password inputs
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(""); // State to store error messages
+  const navigate = useNavigate();
 
   // Function to handle form submission
   const handleSubmit = (e) => {
@@ -19,7 +21,7 @@ function LoginForm() {
       // Successful login
       setError(""); // Clear any previous error message
       console.log("Login successful!");
-      // You can add redirection or further logic here for authenticated users
+      navigate('/todos')
     } else {
       // Failed login
       setError("Invalid email or password"); // Set an error message
@@ -30,7 +32,7 @@ function LoginForm() {
     <div id="logindiv">
       <h1 id="header">Let's Do More</h1>
 
-      <p>Login</p>
+      <h3>Login!</h3>
 
       <form onSubmit={handleSubmit}>
         <div>

@@ -6,8 +6,8 @@ The ultimate goal of this application is to create a modern and simplistic appli
 
 
 
-DEPLOYED LINK: 
-
+LINK TO PROJECT: 
+https://github.com/juroyye/ToDoMernProj
 
 
 
@@ -125,6 +125,69 @@ function App() {
          </div>
 
              </>            
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import './App.css';
+import React, { useState } from 'react';
+import LoginForm from './pages/Login';
+import ToDoForm from './pages/Todos';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+
+
+
+function App() {
+  // State to track whether the user is logged in
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+
+  // Function to handle logout
+
+const handleLogout = () => {
+  setIsLoggedIn(false)
+}
+
+  return (
+    <div>
+      {isLoggedIn ? (
+        // Render the ToDoForm when isLoggedIn is true
+        <div id='tdform'>
+          <ToDoForm />
+          <button onClick={handleLogout}>Work</button>
+        </div>
+      ) : (
+        // Render the LoginForm when isLoggedIn is false
+        <div id='form'>
+          <LoginForm />
+        </div>
+      )}
+    </div>
   );
 }
 
