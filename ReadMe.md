@@ -25,6 +25,11 @@ MERN Stack (
   useNavigate,
   basic CSS
 
+
+Biggest challenge: Getting the navigation/ routing to work (SHOUTOUT MIRANDA, OMARI, AND LEO)
+
+Key Learnings: If you don't have a basic understanding, you will spend way more time than needed. As long as taking time to learn it might take, trying to find a shortcut is even harder.
+
 Getting Started: https://trello.com/b/bYSrfqna/todoapp
 
 ![Alt text](<Screenshot (119).png>)
