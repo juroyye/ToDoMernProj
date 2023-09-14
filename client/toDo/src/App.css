@@ -34,11 +34,14 @@
 }
 
 #title{
+    position: relative;
+    left: 30px;
     color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 25vh;
+    font-size: 70px;
 }
 
 #taske{
@@ -62,6 +65,7 @@
     position: relative;
     overflow: hidden;
     font-weight: 700;
+    left: 100px;
 }
 
 #rembtn{
@@ -157,4 +161,8 @@
     color: green;
     bottom: 35px;
     left: 30px;
+}
+
+.jenn{
+    color: green;
 }

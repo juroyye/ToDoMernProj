@@ -18,7 +18,7 @@ function Create() {
 
   return (
     <div>
-        <h1 id='title'>My Tasks</h1>
+        <h1 id='title'>My <span className='jenn'>Tasks</span></h1>
         <input type='text' placeholder='what do you wanna do?...' onChange={(e) => setTask(e.target.value)} id='taske'/>
         <button type='button' onClick={handleAdd} className='btn'>Add Task</button>
         <button type='button' onClick={gotoLogin} id='logoutbtn'>Logout</button>

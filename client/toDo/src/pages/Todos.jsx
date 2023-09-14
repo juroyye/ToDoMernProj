@@ -8,7 +8,7 @@ function ToDoForm() {
  
     const[todos, setTodos] = useState([])
     
-
+// invokes useEffect
     useEffect(() => {
       axios.get('http://localhost:3001/get')
       .then(result => setTodos(result.data))
@@ -29,7 +29,7 @@ function ToDoForm() {
     }
 
 
-
+// returns these items
   return (
     <div>
         <Create />
