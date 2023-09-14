@@ -25,6 +25,8 @@ MERN Stack (
 
 Getting Started: https://trello.com/b/bYSrfqna/todoapp
 
+![Alt text](<Screenshot (119).png>)
+
 Unsolved Problems: One problem, I can't get my complete task to render back to false in the database once I unclick the checkbox.
 
 Future Enhancements: Stylistic changes, import images that offer personality to each task
